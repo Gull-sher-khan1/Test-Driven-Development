@@ -31,7 +31,7 @@ namespace Domain.Tests
         [InlineData(4,3,1)]
         [InlineData(10, 6, 4)]
         [InlineData(2, 1, 1)]
-        public void Booking_Reduces_Number_Of_Seats(int seats, int bookedSeats, int remainingSeats)
+        public void Given_fight_when_seats_are_booked_then_remaining_seats_reduce(int seats, int bookedSeats, int remainingSeats)
         {
             // Given
             var flight = new Flight(SeatCapacity: seats);
